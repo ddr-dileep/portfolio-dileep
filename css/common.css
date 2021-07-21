@@ -1,0 +1,47 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+/* font-family: 'Marck Script', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+/* font-family: 'Poller One', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+/* font-family: 'Bangers', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+/* font-family: 'Monoton', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* font-family: 'Press Start 2P', cursive; */
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+@media (max-width:1800) {
+    html{
+        font-size: 8px;
+        width: 100%;
+    }
+    *{
+        display: none !important;
+    }
+
+}
+body{
+    background-color: #020d2c;
+    color: #fff;
+}
+
+@media only screen and (max-width: 987){
+    nav{
+        display:none;
+    }
+    
+}
+a{
+    text-decoration:none;
+}
+
+@media only screen and (max-width: 1400px){
+    
+}

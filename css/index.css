@@ -1,0 +1,491 @@
+nav{
+    background-color: rgba(30, 1, 58, 0.76);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    z-index: 1;
+    /* width: 100px; */
+}
+
+nav img{ 
+    border-radius: 50%;
+    width:250px;
+    text-align: center;
+   padding: 1rem;
+   transition: all 0.4s ease-in-out;
+    position: relative;
+    z-index: 10;
+}
+.img-hero-box{
+    position: relative;
+    border-radius:50%;
+    overflow: hidden;
+}
+.img-hero-box::after{
+    content:"";
+    position: absolute;
+    background-color: rgb(245, 207, 81);
+    z-index: -8;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    animation: hover-img 0.5s ease-in-out 0.1s infinite alternate linear;
+}
+.img-hero-box:hover::after{
+    background-color: rgb(241, 241, 122);
+    
+}
+@keyframes hover-img{
+    /* 0% {left: 0%;}
+    30% {left: 30%;}
+    50% {left:80%}
+    80% {left: 100%;}
+    100% {left: 90%;} */
+   
+        0%   {background-color: red;}
+        25%  {background-color: yellow;}
+        50%  {background-color: blue;}
+        100% {background-color: green;}
+      
+}
+header{
+    display: flex;
+    /* flex-direction:column; */
+}
+nav{
+    width:500px;
+    text-align: center;
+    position: fixed;
+}
+.left-fiexd{
+    width: 40%;
+}
+.tabs-menus{
+    display: flex;
+    flex-direction:column;
+}
+.container-outer-left h2{
+    margin-top:2.8rem;
+    font-size:3.2rem;
+    font-family: 'Poller One', cursive;
+    color: yellow;
+}
+.container-outer-left p{
+    font-size:1.4rem;
+    margin-top:1rem;
+    color: snow;
+    font-family: 'Bangers', cursive;
+    color: yellowgreen;
+    margin-bottom: 5rem;
+}
+.tabs-menus a{
+    display:inline-block;
+    color: #fff;
+    font-size:2rem;
+    background-color: rgb(1, 18, 41);
+    width: 100%;
+    margin-top:1rem;
+    padding: 0.8rem ;
+    border: 1px solid green;
+    border-radius:50px;
+    transition: all 0.4s ease-in-out;
+}
+.tabs-menus a:hover{
+    background-color: rgb(216, 216, 90);
+    border: 1px solid #000;
+    color: #000;
+}
+.container-outer-Home{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  
+}
+
+.inner-box-Home{
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    width: 60%;
+    margin-left:35%
+}
+.inner-box-Home h4{
+    font-size:1.6rem;
+    text-transform: uppercase;
+    font-family: 'Marck Script', cursive;
+}
+.inner-box-Home h2{
+    font-size: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.inner-box-Home p{
+    font-size: 1.6rem;
+    line-height: 3.3rem;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.4rem;
+    width: 85%;
+    text-align: justify;
+}
+.inner-box-Home a{
+    display: inline-block;
+    background-color: yellow;
+    width:200px;
+    text-align: center;
+    padding: 1.3rem;
+    margin-top:2.7rem;
+    display: flex;justify-content:center;
+    color: black;
+    font-size:1.2rem;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 1px solid rgb(80, 76, 76);
+    transition: all 0.4s ease-in-out;
+}
+.inner-box-Home a:hover {
+    color: black;
+    background-color: #fff;
+    border-radius:1px solid black;
+}
+.inner-box-Home a svg{
+    color: red;
+    /* font-size: 1.5rem; */
+    line-height:100%;
+    margin: .2rem 0 0 .5rem;
+    font-weight: bold;
+}
+#About{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+/* .left-fiexd{
+    background: rgb(255, 255, 255);
+    flex: 2;
+    height: 500px;
+    width: 500px;
+}
+.container-outer-about{
+    flex: 2;
+} */
+.container-outer-about .about-main{
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    margin-left: 35%;
+}
+ .inner-box-inner h2.heading{
+    font-size:3.2rem;
+    /* text-align:center; */
+    /* margin-left: 50%; */
+    border-bottom:1px solid rgba(255, 255, 255, 0.534);
+    width: 1300px;
+    margin-left: 20%;
+    padding: 3rem 11rem;
+    margin-bottom: 7rem;
+    text-transform: uppercase;
+    /* font-family: 'Bangers', cursive; */
+}
+
+.about-main .about-left p{
+    font-size: 2rem;
+    line-height: 4rem;
+    letter-spacing: 0.2rem;
+
+}
+.about-main .about-left p span{
+    background-color: rgba(16, 48, 2, 0.288);
+    padding: 0.2rem 2rem;
+    border-radius: 20px;
+    color: yellow;
+}
+.about-main .about-left p span:hover{
+    background-color: rgba(19, 58, 1, 0.664);
+    cursor: pointer;
+}
+.about-main .about-left a{
+ display: inline-block;
+    background-color: yellow;
+    width:200px;
+    text-align: center;
+    padding: 1.3rem;
+    margin-top:3rem;
+    display: flex;justify-content:center;
+    color: black;
+    font-size:1.2rem;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 1px solid rgb(80, 76, 76);
+    transition: all 0.4s ease-in-out;
+}
+.about-main .about-left a:hover {
+    color: black;
+    background-color: #fff;
+    border-radius:1px solid black;
+}
+.about-main .about-left a svg{
+    width:2rem;
+    height:2rem;
+    margin-left:1rem;
+}
+.about-right{
+    display: flex;
+    justify-content: flex-end;
+    margin:4.2rem 2rem;
+}
+
+.about-right .inner-box-about-right .box0{
+    background-color: rgba(233, 222, 76, 0.952);
+    text-align: center;
+    color: #000;
+    padding: 2rem;
+    margin: 1.3rem 0.5rem;
+    border: 1px solid #000;
+    border-radius:10px;
+    transition: all 0.4s ease-in-out;
+}
+.about-right .inner-box-about-right .box0:hover{
+    background-color: yellow;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.about-right .inner-box-about-right .box0 h2{
+    font-size:2.7rem;
+    font-weight:bolder;
+    font-family: 'Press Start 2P', cursive !important;
+}
+.about-right .inner-box-about-right .box0 p{
+    font-size:1.2rem;
+    color: rgb(2, 27, 136);
+}
+
+#Education{
+    height:auto;
+    width:100%;
+    padding: 5rem 0;
+}
+#Education .main-education{
+    width:60%;
+    margin-left: 30%;
+}
+#Education  h2.heading{
+    border-bottom:1px solid rgba(255, 255, 255, 0.534);
+    width: 1300px;
+    margin-left: 30%;
+    padding: 3rem 11rem;
+    margin-bottom: 7rem;
+    text-transform: uppercase;
+    font-size:3.2rem;
+}
+.main-education .card{
+    background-color: rgb(67, 47, 116);
+    color: #000;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    margin-top:1rem;
+    padding: 4rem 2rem 4rem 3rem;
+    color: #fff;
+    text-align: justify;
+    transition: all 0.4s ease-in-out;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.main-education .card::after{
+    content: "";
+    width: 5px;
+    height: 90%;
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left:1.7rem;
+    display: flex;
+    align-items: center;
+    margin-top:20%
+}
+.main-education .card::before{
+    content: "";
+    position: absolute;
+    width:35px;
+    height:35px;
+    top: 35px;
+    left: 5px;
+    background-color:yellow;
+    font-size: 5rem;
+    font-weight: bolder;
+    border-radius: 50%;
+}
+.main-education .card:hover::after,
+.main-education .card:hover::before{
+    background-color: #000;
+}
+.main-education .card:hover
+{
+    background-color: yellow;
+    cursor: pointer;
+    color: #000 !important;
+}
+.main-education .card-title{
+    background-color: #fff;
+    display: inline-block;
+    padding:.5rem 1rem;
+    border-radius:20px;
+    border: 1px solid rgb(37, 37, 0);
+    color: #000;
+}
+.main-education .card-title+h2{
+    color: yellow;
+    transition: all 0.4s ease-in-out;
+    margin: 1.2rem 0;
+    font-weight: bold;
+}
+
+.main-education .card:hover h2{
+    color: black;
+}
+.main-education .card-title+h2+p{
+    font-size:1.3rem;
+    line-height:2.4rem;
+}
+
+
+#Portfolio{
+    height:auto;
+    width:100%;
+    padding: 5rem 0;
+}
+#Portfolio .main-education{
+    width:60%;
+    margin-left: 30%;
+}
+#Portfolio  h2.heading{
+    border-bottom:1px solid rgba(255, 255, 255, 0.534);
+    width: 1300px;
+    margin-left: 30%;
+    padding: 3rem 11rem;
+    margin-bottom: 7rem;
+    text-transform: uppercase;
+    font-size:3.2rem;
+}
+
+#Portfolio .main-portfolio{
+    width:60%;
+    margin-left: 30%;
+    overflow: hidden;
+}
+.main-portfolio img{
+    width:100%;
+    height:300px;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    border: 3px solid yellow;
+}
+.main-portfolio .card::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 32212;
+    background-color: rgba(54, 54, 54, 0.651);
+}
+.main-portfolio .card{
+    overflow: hidden;
+}
+.main-portfolio .card:hover::after{
+    background-color: rgba(208, 233, 96, 0.226);
+}
+.main-portfolio img:hover{
+    transform: scale(1.1);
+    border: 3px solid rgb(255, 255, 255);
+}
+#Contact{
+    height:auto;
+    width:100%;
+    padding: 5rem 0;
+}
+#Contact .main-education{
+    width:60%;
+    margin-left: 30%;
+}
+#Contact h2.heading{
+    border-bottom:1px solid rgba(255, 255, 255, 0.534);
+    width: 1300px;
+    margin-left: 30%;
+    padding: 3rem 11rem;
+    margin-bottom: 7rem;
+    text-transform: uppercase;
+    font-size:3.2rem;
+}
+#Contact .main-education h3{
+    font-size:2.7rem;
+    margin-bottom: 2rem;
+}
+#Contact .main-education p{
+    line-height:3rem;
+    font-size: 1.4rem;
+    color: rgb(252, 252, 228);
+}
+#Contact .main-education svg{
+    color: yellow;
+    width: 2.3rem;
+    height: 2.3rem;
+    margin-right: 2.3rem;
+}
+#Contact .main-education form .form-floating input , textarea{
+    background-color:rgb(78, 40, 122) !important;
+    outline: none !important;
+    border: 1px solid rgba(238, 230, 230, 0.514);
+    width: 60% !important;
+    resize: none !important;
+}
+#Contact .main-education form a.button-form{
+    background-color: #fff;
+    display: inline-block;
+    padding:1.4rem 2rem;
+    margin-top: 0.1rem;
+    width:60%;
+    text-align:center;
+    text-transform: uppercase;
+    font-size:1.2rem;
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+#Contact .main-education form a.button-form::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background-color: yellow;
+    z-index:-1;
+}
+#Contact .main-education form a.button-form:hover::after{
+    animation: btn-color;
+    background-color: #fff;;
+}
+@keyframes btn-color{
+    0%{left: 0;}
+    20%{left: 30%;}
+    60%{left: 100%;}
+    80%{left: 90%;}
+    100%{left: 100%;}
+}
